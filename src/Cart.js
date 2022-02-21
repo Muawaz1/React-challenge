@@ -11,9 +11,9 @@ function Cart(){
   console.log(arrayId);
   return(
     <main>
-      {arrayId.map((counterData)=>{
-        const { name, price, image, Description,id } = Data[counterData];
-        const newId = id;
+      {arrayId.map((counterData,indux)=>{
+        const { name, price, image, Description } = Data[counterData];
+        const newId =indux;
         console.log(counterData)
           return(
             <div >
