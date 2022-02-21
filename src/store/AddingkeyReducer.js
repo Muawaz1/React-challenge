@@ -10,7 +10,7 @@ const AddingkeyReducer = (state=initialState,action)=> {
 		case "ADD":
 		return {...state,CART_ITEMS:[...state.CART_ITEMS,action.payload],CARDCOUNTER:state.CARDCOUNTER+1};
 		case "REMOVE":
-		return {...state,CART_ITEMS:[...state.CART_ITEMS.filter((item)=>item!==action.payload)],CARDCOUNTER:state.CARDCOUNTER-1};
+		return {...state,CART_ITEMS:[...state.CART_ITEMS.filter((data,indux)=>indux!==action.payload)],CARDCOUNTER:state.CARDCOUNTER-1};
     case "INCREMENT":
     return {...state,INCREMENT:state.INCREMENT+1};
 		default:
